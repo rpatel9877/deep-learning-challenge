@@ -6,8 +6,11 @@ Overview of the analysis: Explain the purpose of this analysis.
 Results:
 
 Data Preprocessing
+
 What variable(s) are the target(s) for your model?
+
 What variable(s) are the features for your model?
+
 What variable(s) should be removed from the input data because they are neither targets nor features?
    
 Compiling, Training, and Evaluating the Model
