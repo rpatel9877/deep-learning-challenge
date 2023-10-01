@@ -7,18 +7,32 @@ Results:
 
 Data Preprocessing
 
-What variable(s) are the target(s) for your model?
-   The target variable is the 'IS_SUCCESSFUL' column from application_df
+1. What variable(s) are the target(s) for your model?
 
-What variable(s) are the features for your model?
-   The feature variables are every other column from application_df --> this was defined by dropping the 'IS_SUCCESSFUL' column from the original dataframe
+- The target variable is the 'IS_SUCCESSFUL' column.
 
-What variable(s) should be removed from the input data because they are neither targets nor features?
-   Both 'EIN' and 'NAME' columns were dropped/removed, because they were neither targets nor features for the dataset.
+2. What variable(s) are the features for your model?
+
+- The feature variables are every other column.
+
+3. What variable(s) should be removed from the input data because they are neither targets nor features?
+
+- The 'EIN' and 'NAME' columns were dropped because they were not targets nor features in the dataset.
+
+
 Compiling, Training, and Evaluating the Model
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
 
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
--
+4. How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+- I used 10 hidde nnodes for layer 1 and 5 nodes for layer 2. I chose this as a estimate i thought would work.
+  
+5. Were you able to achieve the target model performance?
+   
+- The model only reached 72.5% accuaracy
+
+6. What steps did you take in your attempts to increase model performance?
+   
+- I added layers, removed columns, and added more hidden nodes in order to achieve a higher accuracy.
+
+Summary:
+- The model was 72.5% accurate in predicting successful applicants. Using a model with a more correlating input and output would result in a higher prediction accuracy. This could be acheived by doing more extensive data cleaning.
